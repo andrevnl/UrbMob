@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UrbMob</string>
+    <string name="AdicionarRota">Add destination</string>
+    <string name="EnviarRota">Generate route</string>
+    <string name="Inicio">From :</string>
+    <string name="Fim">To :</string>
+    <string name="title_activity_maps">UrbMob</string>
+</resources>

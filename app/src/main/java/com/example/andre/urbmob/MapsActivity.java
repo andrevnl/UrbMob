@@ -7,8 +7,8 @@ import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -29,7 +29,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import static com.example.andre.urbmob.R.string.app_name;
 
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,GoogleApiClient.ConnectionCallbacks,GoogleApiClient.OnConnectionFailedListener,LocationListener{
+public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback,GoogleApiClient.ConnectionCallbacks,GoogleApiClient.OnConnectionFailedListener,LocationListener{
     //Classe responsavel por conectar a API do Google
     private GoogleApiClient mGoogleApiClient;
     //Classe responsavel por criar o Mapa
@@ -48,6 +48,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             android.Manifest.permission.READ_EXTERNAL_STORAGE,
             android.Manifest.permission.WRITE_EXTERNAL_STORAGE
     };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,6 +122,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void AdicionarRota(View view){
         Intent intent = new Intent(this,SecondActivity.class);
         startActivity(intent);
+
     }
 
     protected void startLocationUpdates(){

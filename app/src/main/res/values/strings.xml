@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">UrbMob</string>
-    <string name="title_activity_maps">UrbMob</string>
+    <string name="title_activity_maps" translatable="false">UrbMob</string>
+    <string name="Inicio">De:</string>
+    <string name="Fim">Para</string>
+    <string name="EnviarRota">Gerar rota</string>
+    <string name="AdicionarRota">Adicionar destino</string>
 </resources>
