@@ -88,7 +88,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //Desconecta do serviço LocationServices
         mGoogleApiClient.disconnect();
         //Desativa o GPS para não atualizar o local
-        stopLocationUpdates();
+        //stopLocationUpdates();
         super.onStop();
     }
 
@@ -119,7 +119,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     public void AdicionarRota(View view){
-        Intent
+        Intent intent = new Intent(this,SecondActivity.class);
+        startActivity(intent);
     }
 
     protected void startLocationUpdates(){
